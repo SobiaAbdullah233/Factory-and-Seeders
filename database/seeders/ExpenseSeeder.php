@@ -1,0 +1,24 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Expense;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class ExpenseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Expense::Create([
+            'category_id'=>'50',
+            'title'=>'Office Boy',
+            'discrption'=>'For cleaning purpose ',
+            'amount'=>'2000'
+
+        ]);
+    }
+}
